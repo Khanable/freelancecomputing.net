@@ -1,0 +1,79 @@
+@page {
+	size: A4 portrait;
+}
+
+body > div, main, address, address > div, .row, .row > section, .stack-img ul, #dob, #address {
+  display: flex;
+}
+
+body > div {
+  flex-direction: column;
+}
+
+body > div, address, section  {
+  border: 0.01em black solid;
+  box-sizing: content-box;
+}
+
+main, address, address > div, .row, .stack-img ul {
+  flex-wrap: wrap;
+}
+
+main, address, address > div, .row {
+  flex-basis: 100%;
+}
+
+address > div {
+  justify-content: space-around;
+}
+
+.row {
+  height: 33.34%;
+}
+
+.row > section {
+  flex-flow: column wrap;
+  flex: 1 16em; /* 26em -> 32em, to col layout break at 32em */
+}
+
+.row .size-2x, .size-2x {
+  flex-grow: 2;
+}
+
+.stack-img ul > li {
+  list-style-type: none;
+}
+
+.stack-img ul > li img{
+  width: 3em;
+  height: 3em;
+}
+
+#professional_stack_typescript {
+  margin-right: .6rem;
+  margin-left: 1rem;
+}
+
+#professional_stack_boostrap {
+  background: #7952b3
+}
+
+#dob > span:last-child::after, #address > span:last-child::after {
+  content: unset;
+}
+
+ #dob > span::after {
+  content: "-";
+}
+
+#address > span::after {
+  content: ","
+}
+
+#address > span:first-child {
+  padding-left: unset;
+}
+
+#address > span {
+  padding-left: 0.1em;
+}

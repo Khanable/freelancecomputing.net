@@ -2,7 +2,7 @@
 	size: A4 portrait;
 }
 
-body > div, main, address, address > div, .row, .row > section, .stack-img ul, #dob, #address {
+body > div, main, address, address > div, .row, .row > section, .stack-img ul, #dob, #address #work_history-container {
   display: flex;
 }
 

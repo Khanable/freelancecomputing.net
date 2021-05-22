@@ -9,42 +9,37 @@
 	</head>
 	<body class=A4>
 		<div class='sheet padding -10mm'>
-			<header>
+      <header>
+        <div style='background: black'></div>
+        <address>
+          <!-- can a div contain phrasing cotent? / text -->
+          <div id=name>Bradley S Warner</div>
+        </address>
+        <div id=job-title>Web Developer</div>
+      </header>
+			<menu>
+        <section>
+          <h1>Profile</h1>
+          <p></p>
+        </section>
 				<address>
-          <div id=address-details>
-            <span id=name>
-              <span id=name-first>Bradley</span>
-              <span id=name-last>Warner</span>
-            </span>
-            <span id=dob>
-              <span id=dob-day>04</span>
-              <span id=dob-month>02</span>
-              <span id=dob-year>1992</span>
-            </span>
-            <span id=mob>0422039938</span>
-            <span id=email>bradley@freelancecomputing.net</span>
-            <span id=address>
-              <span id=address-street>12 Blush Tce</span>
-              <span id=address-suburb>Tarneit</span>
-              <span id=address-state>VIC</span>
-              <span id=address-postcode>3029</span>
-            </span>
-          </div>
-          <div id=address-more_info>
-            <p>For more information visit 
-              <a id=website href=https://freelancecomputing.net>freelancecomputing.net</a>
-              or view an interactive resume
-              <a href=https://freelancecomputing.net/resume>freelancecomputing.net/resume</a>
-            </p>
-          </div>
-          <!-- move these to my website landing page -->
-          <!-- <span id=github>Khanable</span> -->
-          <!-- <span id=linkedin></span> -->
-          <!-- <span id=codewars></span> -->
-				</address>
-			</header>
+            <div id=mob>0422039938</div>
+            <div id=email>bradley@freelancecomputing.net</div>
+            <!--what about link?, can a b a child of div?-->
+            <div id=linkedin><a href='https://www.linkedin.com/in/b-warner/'>https://www.linkedin.com/in/b-warner</a></div>
+            <div id=github class=wip><a href='https://github.com/Khanable'>https://github.com/Khanable</a></div>
+            <div id=website class=wip><a href='https://freelancecomputing.net'>https://freelancecomputing.net</a></div>
+        </address>
+        <section> 
+          <h1>Hobbies</h1>
+          <ul>
+            <li>Cats</li>
+            <li>Video Games</li>
+            <li>??</li>
+        </section>
+			</menu>
       <main>
-        <div class='row'>
+        <div class=row>
           <section id=about class='size-2x'>
             <h1>About</h1>
             <p>
